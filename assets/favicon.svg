@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fav-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0B0F19"/>
+    </linearGradient>
+    <linearGradient id="fav-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Rounded Dark Slate Frame -->
+  <rect width="512" height="512" rx="140" fill="url(#fav-bg)" stroke="url(#fav-blue)" stroke-width="20" stroke-opacity="0.4"/>
+
+  <!-- Inner Cyan Ring Glow -->
+  <rect x="24" y="24" width="464" height="464" rx="120" fill="none" stroke="#06B6D4" stroke-width="4" stroke-opacity="0.5"/>
+
+  <!-- MAQ Textmark with Glowing Cyan Dot -->
+  <g transform="translate(256, 320)">
+    <!-- Letters "MAQ" -->
+    <text x="-40" y="0" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="210" text-anchor="middle" fill="#FFFFFF" letter-spacing="-10">
+      MA<tspan fill="url(#fav-blue)" font-style="italic">Q</tspan>
+    </text>
+    <!-- Accent Dot -->
+    <circle cx="160" cy="-10" r="26" fill="#06B6D4"/>
+  </g>
+</svg>
