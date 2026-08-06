@@ -1,0 +1,100 @@
+/* ==========================================================================
+   MAQ.CR / MOHAMMED VELOM - ANIMATIONS & WATERMARK SVGS (ANIMATIONS.CSS)
+   ========================================================================== */
+
+/* SplitType Character / Line Masks */
+.char, .word, .line {
+  display: inline-block;
+  will-change: transform, opacity, filter;
+}
+
+/* GSAP Power4 Section Reveal Hooks */
+.reveal-power4 {
+  opacity: 0;
+  transform: translateY(80px);
+  filter: blur(10px);
+  transition: opacity 0.8s var(--ease-power4), transform 0.8s var(--ease-power4), filter 0.8s var(--ease-power4);
+}
+
+.reveal-power4.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* 3D Parallax Tilt Perspective Hover */
+.category-card, .horizontal-card, .work-showcase-card, .hero-portrait-wrapper, .tool-matrix-card {
+  will-change: transform;
+  transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
+}
+
+/* --------------------------------------------------------------------------
+   LOW OPACITY ANIMATED GLASS BACKGROUND WATERMARK SVGS
+   -------------------------------------------------------------------------- */
+.svg-bg-watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.07;
+  fill: var(--accent);
+  transition: opacity 0.4s ease, fill 0.4s ease;
+}
+
+[data-theme="light"] .svg-bg-watermark {
+  opacity: 0.08;
+}
+
+.svg-bg-watermark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-spin-rotate {
+  animation: spinRotate 35s linear infinite;
+}
+
+.svg-float-wave {
+  animation: floatWave 14s ease-in-out infinite alternate;
+}
+
+.svg-star-pulse {
+  animation: starPulse 18s ease-in-out infinite alternate;
+}
+
+@keyframes spinRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes floatWave {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-25px, 20px) rotate(6deg); }
+  100% { transform: translate(20px, -25px) rotate(-6deg); }
+}
+
+@keyframes starPulse {
+  0% { transform: scale(0.9) rotate(0deg); }
+  50% { transform: scale(1.12) rotate(15deg); }
+  100% { transform: scale(0.95) rotate(-15deg); }
+}
+
+/* Lenis Scroll Container Overrides */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

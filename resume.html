@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Velom — Official Curriculum Vitae (PDF)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-dark: #030712;
+      --bg-card: #0F172A;
+      --accent-blue: #3B82F6;
+      --accent-cyan: #06B6D4;
+      --accent-gradient: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%);
+      --text-main: #F8FAFC;
+      --text-sub: #94A3B8;
+      --border-light: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-main);
+      background: var(--bg-dark);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+    }
+
+    .no-print-bar {
+      max-width: 900px;
+      margin: 0 auto 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-download-pdf {
+      padding: 0.85rem 1.8rem;
+      background: var(--accent-gradient);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .btn-download-pdf:hover {
+      transform: translateY(-2px) scale(1.03);
+    }
+
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 24px;
+      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(59, 130, 246, 0.15);
+      overflow: hidden;
+    }
+
+    /* Header Profile Grid */
+    .resume-header {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(3, 7, 18, 0.95) 100%);
+      padding: 3rem;
+      border-bottom: 1px solid var(--border-light);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    .profile-avatar-box {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--accent-blue);
+      box-shadow: 0 0 35px rgba(59, 130, 246, 0.5);
+    }
+
+    .profile-avatar-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-details h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.2rem;
+    }
+
+    .header-title-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    .meta-contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+
+    .meta-contact-row div {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .meta-contact-row i {
+      color: var(--accent-blue);
+    }
+
+    /* Main Resume Body Grid */
+    .resume-body {
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .section-heading {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .section-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-light);
+    }
+
+    .paragraph-text {
+      font-size: 0.92rem;
+      color: var(--text-sub);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+
+    /* Timeline & Experience Items */
+    .exp-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+      padding: 1.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .exp-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .exp-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--accent-blue);
+      margin-bottom: 0.6rem;
+    }
+
+    .exp-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .exp-list li {
+      position: relative;
+      padding-left: 1.2rem;
+      font-size: 0.88rem;
+      color: var(--text-sub);
+      margin-bottom: 0.4rem;
+    }
+
+    .exp-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent-cyan);
+    }
+
+    /* Sidebar Blocks */
+    .sidebar-block {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 1.4rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .skill-chip {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-main);
+      margin-right: 0.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .personal-info-list div {
+      margin-bottom: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    .personal-info-list span {
+      color: var(--text-sub);
+    }
+
+    .personal-info-list strong {
+      color: var(--text-main);
+    }
+
+    /* Print Setup */
+    @media print {
+      body {
+        background: #FFFFFF;
+        color: #0F172A;
+        padding: 0;
+      }
+      .no-print-bar {
+        display: none !important;
+      }
+      .resume-container {
+        box-shadow: none;
+        border: none;
+        background: #FFFFFF;
+        color: #0F172A;
+      }
+      .resume-header {
+        background: #F8FAFC;
+        border-bottom: 2px solid #0F172A;
+      }
+      .header-details h1 {
+        -webkit-text-fill-color: #0F172A;
+      }
+      .sidebar-block, .exp-box {
+        background: #F8FAFC;
+        border: 1px solid #E2E8F0;
+        color: #0F172A;
+      }
+      .paragraph-text, .exp-list li, .personal-info-list span {
+        color: #334155 !important;
+      }
+      .skill-chip {
+        background: #E2E8F0;
+        color: #0F172A;
+        border: 1px solid #CBD5E1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .resume-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem 1.5rem;
+      }
+      .profile-avatar-box {
+        margin: 0 auto;
+      }
+      .meta-contact-row {
+        justify-content: center;
+      }
+      .resume-body {
+        grid-template-columns: 1fr;
+        padding: 1.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print-bar">
+    <a href="index.html" style="color: var(--text-sub); text-decoration: none; font-weight: 600;"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+    <button onclick="window.print()" class="btn-download-pdf">
+      <i class="fa-solid fa-file-pdf"></i> Save / Print as PDF
+    </button>
+  </div>
+
+  <div class="resume-container">
+    
+    <!-- HEADER WITH PORTRAIT & WEBSITE PALETTE -->
+    <div class="resume-header">
+      <div class="profile-avatar-box">
+        <img src="assets/mohammed-velom-portrait.jpg" alt="Mohammed Velom Portrait">
+      </div>
+
+      <div class="header-details">
+        <h1>MOHAMMED VELOM</h1>
+        <div class="header-title-badge">GRAPHIC DESIGNER • PHOTOGRAPHER • VIDEOGRAPHER</div>
+
+        <div class="meta-contact-row">
+          <div><i class="fa-solid fa-location-dot"></i> Velom, Kozhikode, Kerala, India</div>
+          <div><a href="mailto:mohammedvelom.in@gmail.com" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-envelope"></i> mohammedvelom.in@gmail.com</a></div>
+          <div><a href="https://wa.me/919747008103?text=Hello!%20Mohammed%20Velom%20I'd%20like%20to%20discuss%20a%20project." target="_blank" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fa-brands fa-whatsapp" style="color: var(--accent-cyan);"></i> WhatsApp</a></div>
+          <div><a href="https://www.linkedin.com/in/mohammedvelom1/" target="_blank" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/mohammedvelom1</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="resume-body">
+      
+      <!-- LEFT COLUMN -->
+      <div>
+        
+        <!-- PROFESSIONAL SUMMARY -->
+        <div style="margin-bottom: 2rem;">
+          <h2 class="section-heading"><i class="fa-solid fa-user"></i> Professional Summary</h2>
+          <p class="paragraph-text">
+            Creative and detail-oriented Graphic Designer, Photographer, and Videographer with 2+ years of experience producing compelling visual content across digital and print media. Skilled in creating brand identities, social media creatives, promotional campaigns, photography, and cinematic video production. Passionate about transforming ideas into engaging visual experiences through strong storytelling, creative direction, and modern design principles. Currently pursuing a Bachelor of Computer Applications (BCA), combining technical knowledge with creative expertise.
+          </p>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div style="margin-bottom: 2rem;">
+          <h2 class="section-heading"><i class="fa-solid fa-briefcase"></i> Experience</h2>
+
+          <div class="exp-box">
+            <div class="exp-title">Graphic Designer & Visual Content Creator</div>
+            <div class="exp-meta">Freelance / Creative Projects • 2024 – Present</div>
+            <ul class="exp-list">
+              <li>Designed logos, brand identities, posters, brochures, banners, and social media creatives.</li>
+              <li>Developed marketing materials for educational institutions, events, and commercial businesses.</li>
+              <li>Collaborated with clients to deliver bespoke creative solutions within strict deadlines.</li>
+              <li>Maintained brand architecture consistency across print and digital platforms.</li>
+            </ul>
+          </div>
+
+          <div class="exp-box">
+            <div class="exp-title">Photographer & Videographer</div>
+            <div class="exp-meta">Freelance • 2024 – Present</div>
+            <ul class="exp-list">
+              <li>Captured commercial portraits, events, promotional shoots, and campus programs.</li>
+              <li>Planned and executed cinematic photo and video productions with Sony camera gear.</li>
+              <li>Edited high-resolution photos and videos for social media, branding, and promo campaigns.</li>
+              <li>Managed projects end-to-end from creative concept to final delivery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PROJECT HIGHLIGHTS -->
+        <div style="margin-bottom: 2rem;">
+          <h2 class="section-heading"><i class="fa-solid fa-star"></i> Project Highlights</h2>
+          <ul class="exp-list">
+            <li>Designed branding and promotional materials for educational institutions and community events.</li>
+            <li>Produced cinematic promotional videos for campus programs and social media campaigns.</li>
+            <li>Created visual identities, posters, certificates, and event branding assets.</li>
+            <li>Developed engaging digital content for online platforms (`maq.cr`).</li>
+          </ul>
+        </div>
+
+        <!-- CAREER OBJECTIVE -->
+        <div>
+          <h2 class="section-heading"><i class="fa-solid fa-bullseye"></i> Career Objective</h2>
+          <p class="paragraph-text" style="margin-bottom: 0;">
+            To leverage my creativity and technical expertise in graphic design, photography, and videography to create meaningful visual experiences while continuously growing as a creative professional and contributing to impactful projects.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div>
+        
+        <!-- EDUCATION -->
+        <div class="sidebar-block">
+          <h3 class="section-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <div style="font-weight: 700; font-size: 0.95rem;">Bachelor of Computer Applications (BCA)</div>
+          <div style="font-size: 0.82rem; color: var(--accent-cyan); margin-top: 0.2rem;">Distance Education</div>
+          <div style="font-size: 0.85rem; color: var(--text-sub); margin-top: 0.3rem;">Currently Pursuing</div>
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="sidebar-block">
+          <h3 class="section-heading"><i class="fa-solid fa-laptop-code"></i> Technical Skills</h3>
+          
+          <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 0.4rem;">DESIGN</div>
+            <span class="skill-chip">Photoshop</span>
+            <span class="skill-chip">Illustrator</span>
+            <span class="skill-chip">Canva</span>
+            <span class="skill-chip">Brand Identity</span>
+            <span class="skill-chip">Typography</span>
+            <span class="skill-chip">Print & Layout</span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 0.4rem;">PHOTOGRAPHY</div>
+            <span class="skill-chip">Portrait</span>
+            <span class="skill-chip">Event</span>
+            <span class="skill-chip">Product</span>
+            <span class="skill-chip">Lightroom</span>
+            <span class="skill-chip">Retouching</span>
+          </div>
+
+          <div>
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 0.4rem;">VIDEOGRAPHY</div>
+            <span class="skill-chip">Cinematic Filming</span>
+            <span class="skill-chip">Video Editing</span>
+            <span class="skill-chip">Motion Graphics</span>
+            <span class="skill-chip">Color Grading</span>
+          </div>
+        </div>
+
+        <!-- PERSONAL DETAILS -->
+        <div class="sidebar-block">
+          <h3 class="section-heading"><i class="fa-solid fa-address-card"></i> Personal Details</h3>
+          <div class="personal-info-list">
+            <div><span>Full Name:</span> <strong>Mohammed Velom</strong></div>
+            <div><span>DOB:</span> <strong>20/02/2006</strong></div>
+            <div><span>Gender:</span> <strong>Male</strong></div>
+            <div><span>Nationality:</span> <strong>Indian</strong></div>
+            <div><span>Languages:</span> <strong>English, Malayalam, Arabic</strong></div>
+          </div>
+        </div>
+
+        <!-- STRENGTHS -->
+        <div class="sidebar-block">
+          <h3 class="section-heading"><i class="fa-solid fa-bolt"></i> Strengths</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="skill-chip">Problem Solving</span>
+            <span class="skill-chip">Attention to Detail</span>
+            <span class="skill-chip">Adaptability</span>
+            <span class="skill-chip">Fast Learner</span>
+            <span class="skill-chip">Communication</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

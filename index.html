@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maq.cr — Mohammed Velom | Midnight Blue Portfolio</title>
+  <meta name="description" content="Portfolio of Mohammed Velom (maq.cr) — Graphic Designer, Photographer, Videographer, Content Writer & BCA Student based in Kerala, India.">
+  <meta name="keywords" content="Mohammed Velom, maq.cr, Graphic Designer, Photographer, Videographer, Kerala, Portfolio, Awwwards, UI UX Design">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="maq.cr — Mohammed Velom Portfolio">
+  <meta property="og:image" content="assets/mohammed-velom-portrait.jpg">
+
+  <!-- Google Fonts Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Instrument+Serif:ital@1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- 1. PRELOADER LOADING SCREEN (Motion Letter Pop-Up & High-Tech 1,2,3 Counter) -->
+  <div class="preloader">
+    <div class="preloader-glow"></div>
+    
+    <div class="preloader-content">
+      <!-- Title Split Letters Container (Motion Pop-Up Letters) -->
+      <div class="preloader-title-box">
+        <div class="preloader-title-row">
+          <span class="preloader-letter">M</span>
+          <span class="preloader-letter">A</span>
+          <span class="preloader-letter">Q</span>
+          <span class="preloader-letter accent">F</span>
+          <span class="preloader-letter">O</span>
+          <span class="preloader-letter">L</span>
+          <span class="preloader-letter">I</span>
+          <span class="preloader-letter">O</span>
+        </div>
+        <div class="preloader-subtext">MOHAMMED VELOM • CREATIVE DIRECTION</div>
+      </div>
+
+      <!-- High-Tech Countdown Counter Row (1, 2, 3 ... 100%) -->
+      <div class="preloader-counter-row">
+        <div class="preloader-counter-box">
+          <span class="preloader-counter-number">0</span><span class="preloader-counter-unit">%</span>
+        </div>
+        <div class="preloader-step-badge">
+          <span class="preloader-status">01 SYSTEM INIT</span>
+        </div>
+      </div>
+
+      <!-- Progress Fill Line -->
+      <div class="preloader-bar-bg">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor Radial Light Tracker & Ambient Orbs -->
+  <div class="cursor-radial-light"></div>
+  <div class="ambient-orb-topright"></div>
+  <div class="ambient-orb-bottomleft"></div>
+
+  <!-- Custom Follower Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring">
+    <span class="cursor-text"></span>
+  </div>
+
+  <!-- FULLSCREEN LIQUID GLASS DRAWER OVERLAY -->
+  <div class="fullscreen-drawer">
+    <button class="drawer-close-btn" aria-label="Close Navigation">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div style="margin-top: 2rem;">
+      <div class="tag-badge">
+        <span class="tag-badge-dot"></span>
+        NAVIGATION INDEX
+      </div>
+
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item"><a href="#hero" class="drawer-nav-link"><span class="nav-num">01</span> Home</a></li>
+        <li class="drawer-nav-item"><a href="#about" class="drawer-nav-link"><span class="nav-num">02</span> About</a></li>
+        <li class="drawer-nav-item"><a href="#landscape-gallery" class="drawer-nav-link"><span class="nav-num">03</span> Full Campaign Gallery</a></li>
+        <li class="drawer-nav-item"><a href="#media-categories" class="drawer-nav-link"><span class="nav-num">04</span> Media Categories</a></li>
+        <li class="drawer-nav-item"><a href="#portfolio" class="drawer-nav-link"><span class="nav-num">05</span> Selected Work</a></li>
+        <li class="drawer-nav-item"><a href="#process" class="drawer-nav-link"><span class="nav-num">06</span> Process</a></li>
+        <li class="drawer-nav-item"><a href="#tools" class="drawer-nav-link"><span class="nav-num">07</span> Tools & Craft</a></li>
+        <li class="drawer-nav-item"><a href="#services" class="drawer-nav-link"><span class="nav-num">08</span> Services</a></li>
+        <li class="drawer-nav-item"><a href="#experience" class="drawer-nav-link"><span class="nav-num">09</span> Experience</a></li>
+        <li class="drawer-nav-item"><a href="#contact" class="drawer-nav-link"><span class="nav-num">10</span> Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="drawer-footer-widgets">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fa-solid fa-sun"></i></button>
+        <span style="font-size: 0.9rem; color: var(--text-secondary);">Toggle Light / Midnight Dark</span>
+      </div>
+
+      <div style="font-size: 0.9rem; color: var(--text-muted);">
+        Kerala, India • Mohammed Velom (maq.cr)
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo magnetic">
+        <span class="accent-dot"></span>
+        maq.cr
+      </a>
+
+      <!-- Header Controls: Resume Button, Theme Toggle & Hamburger Drawer Toggle -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="resume-modal-trigger btn btn-outline magnetic" style="padding: 0.45rem 1.1rem; font-size: 0.8rem; font-family: var(--font-mono); border-radius: var(--radius-pill);" aria-label="Open Resume">
+          <i class="fa-solid fa-file-pdf" style="color: var(--accent);"></i>
+          <span>Resume</span>
+        </button>
+
+        <button class="theme-toggle-btn magnetic" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button class="drawer-trigger-btn magnetic" aria-label="Open Navigation Drawer">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 2. HERO SECTION (100vh) -->
+    <section id="hero" class="hero-section" style="position: relative; overflow: hidden;">
+      
+      <!-- SVG 1: Geometric Hexagram Emblem Background Watermark -->
+      <div class="svg-bg-watermark svg-spin-rotate" style="width: 480px; height: 480px; top: -5%; right: -5%;">
+        <svg viewBox="0 0 105.59 113.64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M104.87,36.42l.72-1.26-.72-1.26-6.76-11.71h-25.01l-4.61-7.98h0l-7.49-12.96-.72-1.26h-14.97l-.36.63h0l-2.04,3.53-4.72,8.16-.71,1.24-.37.64-4.61,7.98H7.49l-.73,1.26L0,35.16l12.5,21.65h0S.72,77.22.72,77.22l-.72,1.26.72,1.26,6.77,11.7h25l12.1,20.95.72,1.26h14.98l12.81-22.21h25.01l.72-1.26,6.76-11.7-12.5-21.66,11.78-20.4ZM74.55,24.71h22.11l5.3,9.19h-46.29l5.31-9.19h13.57ZM65.58,14.21l4.61,7.98h-10.67l-6.76,11.71-1.45,2.52-6.76,11.71-3.56,6.18-5.31-9.19L59.55,3.77l6.03,10.44ZM47.46,48.13h10.67l5.02,8.7-5.02,8.7h-10.66l-5.03-8.7,5.02-8.7ZM40.01,14.21h0l5.55-9.63,1.2-2.07h10.61l-23.14,40.08-5.31-9.19,6.48-11.21,4.6-7.98ZM31.04,24.71l-5.02,8.7,6.76,11.71,1.45,2.52,6.76,11.71,3.57,6.18h-10.61l-11.14-19.28-12.43-21.53h20.65ZM8.21,25.97l12.43,21.53,10.41,18.02h-10.61L2.9,35.16l5.31-9.19ZM13.95,59.34l5.03,8.7h37.69l-5.3,9.19H3.63l10.32-17.89ZM31.04,88.92H8.94l-5.31-9.18h46.28l-5.29,9.18h-13.58ZM46.04,109.87l-10.64-18.43h10.67l6.75-11.7l1.45-2.52,6.76-11.71,3.57-6.18,5.31,9.18-23.87,41.35ZM70.2,91.44l-11.36,19.69h-10.62l23.14-40.09,5.31,9.19-6.47,11.21ZM74.56,88.92l5.01-8.7-6.76-11.71-1.45-2.52-6.76-11.7-3.56-6.18h10.62l16.79,29.1h0l3.5,6.06,3.25,5.64h-20.65ZM102.69,78.48l-5.31,9.18-5.66-9.81-.14-.23-.23-.4-16.8-29.1h10.61l6.47,11.21,11.05,19.14ZM86.62,45.61h-37.7l5.31-9.19h47.74l-10.32,17.89-5.02-8.7Z"/>
+        </svg>
+      </div>
+
+      <div class="container hero-grid">
+        
+        <!-- Left Side: Real Portrait Photo -->
+        <div class="hero-portrait-container">
+          <div class="hero-portrait-wrapper">
+            <img src="assets/mohammed-velom-portrait.jpg" alt="Mohammed Velom Headshot" class="hero-portrait-img">
+          </div>
+        </div>
+
+        <!-- Right Side: Clean Editorial Typography (No Glitch) -->
+        <div>
+          <h1 class="hero-huge-title" style="font-size: clamp(2.4rem, 4.2vw, 3.8rem); line-height: 1.08; margin-bottom: 0.6rem;">
+            Every Pixel<br>
+            Tells a <em class="cursive-accent">Story</em>.
+          </h1>
+
+          <div style="font-family: var(--font-heading); font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem; letter-spacing: -0.02em;">
+            Mohammed Velom
+          </div>
+
+          <div class="hero-subtitle" style="font-size: 0.92rem; color: var(--accent); font-weight: 700; font-family: var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.2rem;">
+            Graphic Designer • Photographer • Videographer
+          </div>
+
+          <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.75; margin-bottom: 1.8rem; max-width: 580px;">
+            Designing bold brands, capturing authentic moments, and producing cinematic visuals that connect, inspire, and leave a lasting impression.
+          </p>
+
+          <div class="hero-details-row" style="margin-bottom: 1.8rem;">
+            <div><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 0.4rem;"></i> Kerala, India</div>
+            <div><i class="fa-solid fa-graduation-cap" style="color: var(--accent); margin-right: 0.4rem;"></i> BCA Student</div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-row" style="margin-bottom: 2rem;">
+            <a href="https://www.linkedin.com/in/mohammedvelom1/" target="_blank" rel="noopener" class="hero-social-link magnetic" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/maqcr" target="_blank" rel="noopener" class="hero-social-link magnetic" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.fiverr.com/s/dDmw8A6" target="_blank" rel="noopener" class="hero-social-link magnetic" aria-label="Fiverr"><i class="fa-solid fa-bolt"></i></a>
+            <a href="https://x.com/maqvelom" target="_blank" rel="noopener" class="hero-social-link magnetic" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#landscape-gallery" class="btn btn-gradient magnetic" style="padding: 0.9rem 2rem; font-size: 0.9rem;">
+              <span>View Campaign Gallery</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="resume-modal-trigger btn btn-outline magnetic" style="padding: 0.9rem 1.8rem; font-size: 0.9rem;">
+              <span>View Resume</span>
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </button>
+
+            <a href="#contact" class="btn btn-outline magnetic" style="padding: 0.9rem 1.8rem; font-size: 0.9rem;">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="section" style="position: relative; overflow: hidden;">
+      
+      <!-- SVG 2: Abstract Calligraphic Swoop Motif Background Watermark -->
+      <div class="svg-bg-watermark svg-float-wave" style="width: 420px; height: 420px; left: -5%; bottom: -10%;">
+        <svg viewBox="0 0 110.14 103.06" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M43.84,63.49c-.21,104.63-105.57-33.06,11.12-17.94-90.57-52.58,81.44-75.03,9.97,18.57,90.78-52.16,24.24,107.99-21.09-.63Z"/>
+        </svg>
+      </div>
+
+      <div class="container grid-2" style="align-items: center;">
+        
+        <div class="glass-card" style="position: relative; overflow: hidden;">
+          
+          <div class="tag-badge">
+            <span class="tag-badge-dot"></span>
+            ABOUT MOHAMMED
+          </div>
+
+          <h2 class="section-title">
+            Visual <em class="cursive-accent">Storyteller</em> & Creative Designer
+          </h2>
+          
+          <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+            I am Mohammed Velom, a BCA student and creative professional based in Kerala, India. I am passionate about graphic design, video editing, content writing, branding, and digital experiences.
+          </p>
+
+          <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7;">
+            By merging technological algorithms with high-end editorial aesthetics, I craft authentic brand stories and interactive digital art that resonate globally.
+          </p>
+        </div>
+
+        <!-- Count-Up Statistics -->
+        <div class="grid-2">
+          <div class="glass-card" style="text-align: center; padding: 2rem;">
+            <div style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; color: var(--accent);" data-count="5" data-suffix="+">0+</div>
+            <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 600; margin-top: 0.4rem;">Years Learning</div>
+          </div>
+
+          <div class="glass-card" style="text-align: center; padding: 2rem;">
+            <div style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; color: var(--accent);" data-count="150" data-suffix="+">0+</div>
+            <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 600; margin-top: 0.4rem;">Projects</div>
+          </div>
+
+          <div class="glass-card" style="text-align: center; padding: 2rem;">
+            <div style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; color: var(--accent);" data-count="25" data-suffix="+">0+</div>
+            <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 600; margin-top: 0.4rem;">Clients</div>
+          </div>
+
+          <div class="glass-card" style="text-align: center; padding: 2rem;">
+            <div style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; color: var(--accent);" data-count="98" data-suffix="%">0%</div>
+            <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 600; margin-top: 0.4rem;">Client Satisfaction</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PINNED HORIZONTAL LANDSCAPE SCROLL SECTION -->
+    <section id="landscape-gallery" class="horizontal-scroll-section">
+      <div class="horizontal-scroll-header">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          HORIZONTAL CAMPAIGN SHOWCASE
+        </div>
+        <h2 class="section-title" style="margin-bottom: 0;">
+          Campaign <em class="cursive-accent">Gallery</em> & Brand Identities
+        </h2>
+      </div>
+
+      <div class="horizontal-track">
+        
+        <!-- Card 1: Tahta Qadamika Identity -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/campaign-tahta-identity.jpg" alt="Tahta Qadamika - The Core of Green Identity" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">BRAND IDENTITY • TYPOGRAPHY</div>
+            <h3 class="horizontal-card-title">Tahta Qadamika — The Core of Green Identity</h3>
+          </div>
+        </article>
+
+        <!-- Card 2: Tahta Qadamika Mockups & Perfume -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/campaign-tahta-mockup.jpg" alt="Tahta Qadamika Packaging & Perfume Mockup" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">PACKAGING • PRODUCT MOCKUPS</div>
+            <h3 class="horizontal-card-title">Tahta Qadamika — Physical Packaging & Perfume</h3>
+          </div>
+        </article>
+
+        <!-- Card 3: An-Nur Meelad Fete '25 Poster -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/campaign-annur-poster.jpg" alt="An-Nur 1500 Meelad Fete '25 Poster" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">POSTER DESIGN • LEADERSHIP CAMPAIGN</div>
+            <h3 class="horizontal-card-title">An-Nur 1500 Meelad Fete '25 Campaign</h3>
+          </div>
+        </article>
+
+        <!-- Card 4: Isra Tybah Garden Malayalam -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/project-isra-malayalam.jpg" alt="Isra Tybah Garden Inaugural Poster Malayalam" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">EDITORIAL • EVENT BRANDING</div>
+            <h3 class="horizontal-card-title">Isra Tybah Garden — Inaugural Conference (Malayalam)</h3>
+          </div>
+        </article>
+
+        <!-- Card 5: Isra Tybah Garden English -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/project-isra-english.jpg" alt="Isra Tybah Garden Inaugural Poster English" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">PUBLICATION • GLOBAL BRANDING</div>
+            <h3 class="horizontal-card-title">Isra Tybah Garden — Global Campaign (English)</h3>
+          </div>
+        </article>
+
+        <!-- Card 6: Royal Qamees -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/project-royal-qamees.jpg" alt="Royal Qamees Luxury Menswear Eid Campaign" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">LUXURY BRANDING • CALLIGRAPHY</div>
+            <h3 class="horizontal-card-title">Royal Qamees — Eid Mubarak Luxury Campaign</h3>
+          </div>
+        </article>
+
+        <!-- Card 7: Kerala Sahityotsav SSF Panoor -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/project-sahityotsav.jpg" alt="SSF Panoor Sector Kerala Sahityotsav Poster" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">EDITORIAL • POSTER DESIGN</div>
+            <h3 class="horizontal-card-title">Kerala Sahityotsav — SSF Panoor Sector</h3>
+          </div>
+        </article>
+
+        <!-- Card 8: SSF Kuttiady Sahityotsav Event Poster -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/event-poster-sahityotsav.jpg" alt="SSF Kuttiady Division Sahityotsav Event Poster" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">EVENT POSTER • 3D SYMBOLS</div>
+            <h3 class="horizontal-card-title">SSF Kuttiady Division — Sahityotsav '25</h3>
+          </div>
+        </article>
+
+        <!-- Card 9: Velom TV YouTube Thumbnail -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/youtube-thumb-velomtv.jpg" alt="Velom TV Highlights YouTube Thumbnail" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">YOUTUBE THUMBNAIL • MEDIA</div>
+            <h3 class="horizontal-card-title">Velom TV — Snehadaram Highlights</h3>
+          </div>
+        </article>
+
+        <!-- Card 10: Noon Kids Admission Poster -->
+        <article class="horizontal-card" data-cursor-view data-cursor-text="EXPLORE">
+          <div class="horizontal-card-img-box">
+            <img src="assets/admission-poster-noonkids.jpg" alt="Noon Kids Preschool Admission Open Poster" class="horizontal-card-img">
+          </div>
+          <div class="horizontal-card-body">
+            <div class="horizontal-card-tag">ADMISSION POSTER • EDUCATION</div>
+            <h3 class="horizontal-card-title">Noon Kids Preschool — Admission Open</h3>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. 3-CATEGORY MEDIA SHOWCASE -->
+    <section id="media-categories" class="section" style="position: relative; overflow: hidden;">
+      
+      <!-- SVG 3: Radial Geometric Starburst Cluster Background Watermark -->
+      <div class="svg-bg-watermark svg-star-pulse" style="width: 450px; height: 450px; right: -5%; top: 10%;">
+        <svg viewBox="0 0 107.53 109.59" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M73.11,75.38c.13.34.21.7.39,1.01,1.21,2.1,2.42,4.2,3.66,6.29,2.12,3.59,4.24,7.17,6.41,10.73.8,1.31,1.71,2.55,2.59,3.81.43.61.4,1.12-.26,1.52-1.29.79-2.54,1.64-3.9,2.29-.28.14-1.13-.34-1.36-.74-1.78-3.14-3.45-6.35-5.2-9.51-1.9-3.44-3.85-6.84-5.76-10.27-1.85-3.32-3.65-6.67-5.5-9.99-1.88-3.39-3.79-6.77-5.82-10.39.44.16.69.22.91.35,3.52,1.99,7.03,4,10.56,5.97,2.41,1.34,4.86,2.6,7.26,3.95,2.14,1.21,4.22,2.53,6.36,3.74,2.18,1.24,4.4,2.42,6.6,3.6,3.04,1.63,6.11,3.22,9.11,4.93.31.18.46,1.2.25,1.61-.68,1.34-1.51,2.61-2.39,3.82-.17.23-.95.26-1.27.08-1.76-1.01-3.45-2.12-5.17-3.19-3.15-1.95-6.29-3.93-9.47-5.84-2.1-1.26-4.25-2.44-6.39-3.63-.4-.22-.87-.3-1.31-.44-.1.09-.19.18-.29.27Z"/>
+            <path d="M34.06,35.33c-.8-1.43-1.43-2.57-2.07-3.7-1.4-2.46-2.8-4.92-4.24-7.36-1.56-2.64-3.18-5.26-4.77-7.89-.87-1.44-1.75-2.86-2.53-4.35-.14-.26.09-.97.36-1.14,1.28-.81,2.61-1.54,3.98-2.2.26-.13.94.06,1.08.31,1.62,2.71,3.2,5.45,4.74,8.21,1.71,3.09,3.37,6.2,5.04,9.31,1.24,2.32,2.42,4.68,3.71,6.97,1.31,2.34,2.77,4.6,4.09,6.94,1.31,2.33,2.53,4.71,3.8,7.06.36.67.78,1.32,1.37,2.31-.69-.13-1.11-.11-1.42-.28-3.28-1.85-6.55-3.72-9.81-5.6-4.3-2.49-8.6-5-12.89-7.5-3.17-1.85-6.34-3.71-9.51-5.57-2.04-1.2-4.08-2.41-6.13-3.61-.8-.47-1.1-.98-.52-1.9.64-1.01,1.1-2.14,1.66-3.2.32-.61.69-.72,1.36-.3,3.39,2.16,6.82,4.23,10.22,6.38,2.18,1.38,4.29,2.88,6.49,4.23,1.62.99,3.33,1.83,5,2.71.16.09.38.06.99.15Z"/>
+            <path d="M55.33,62.46c1.82,3.18,3.64,6.35,5.47,9.52,1.7,2.95,3.45,5.87,5.11,8.85,1.56,2.78,2.99,5.64,4.55,8.42,1.24,2.21,2.62,4.35,3.89,6.55,1.24,2.16,2.45,4.35,3.56,6.58.16.32-.17,1.14-.52,1.41-.96.73-2.13,1.18-3.06,1.94-1.01.82-1.41.34-1.84-.54-1.4-2.87-2.76-5.77-4.26-8.59-2.1-3.96-4.31-7.85-6.49-11.77-.22-.4-.56-.74-1.19-1.07-.05,1.27-.19,2.55-.15,3.82.19,6.85.39,13.7.65,20.54.04,1.16-.31,1.55-1.46,1.45-1.16-.1-2.35-.08-3.52-.03-.89.04-1.28-.28-1.28-1.18,0-5.17-.01-10.33-.04-15.5-.02-3.13-.13-6.25-.1-9.38.06-6.25.19-12.49.29-18.74.01-.76,0-1.52,0-2.27.14,0,.27-.01.41-.02Z"/>
+            <path d="M46.31,26.62c.09-1.49.27-2.98.27-4.47-.02-6.77-.09-13.54-.15-20.31q-.01-1.79,1.77-1.79c.83,0,1.66.02,2.48-.04,1.08-.08,1.59.24,1.56,1.45-.1,3.42-.1,6.84-.12,10.27-.02,2.77-.01,5.53-.03,8.3-.05,7.51-.1,15.01-.14,22.52,0,1.39.06,2.78.07,4.17,0,.44-.04.88-.07,1.33-.13.04-.27.08-.4.12-.45-.69-.94-1.36-1.35-2.08-1.64-2.9-3.26-5.8-4.86-8.72-1.29-2.34-2.49-4.73-3.81-7.05-1.46-2.56-3.05-5.04-4.5-7.6-1.78-3.16-3.45-6.38-5.2-9.55-1.06-1.93-2.22-3.8-3.24-5.74-.17-.32-.07-1.12.18-1.28,1.15-.77,2.4-1.39,3.61-2.06.77-.42,1.22-.25,1.63.59,1.75,3.61,3.53,7.22,5.39,10.77,1.51,2.86,3.16,5.64,4.75,8.46.53.95,1.03,1.92,1.54,2.87.21-.05.42-.1.63-.15Z"/>
+            <path d="M80.86,48.26c.57.05,1.14.14,1.71.13,4.77-.09,9.55-.16,14.32-.32,3.12-.1,6.25-.29,9.36-.51,1.01-.07,1.33.25,1.27,1.22-.08,1.08-.15,2.18-.06,3.25.11,1.4-.5,1.8-1.81,1.79-4.82-.03-9.64.06-14.47.02-8.29-.06-16.59-.18-24.88-.26-1.6-.02-3.21.05-4.82.07-.32,0-.64-.05-1.07-.36.39-.28.77-.59,1.19-.83,3.57-2.05,7.14-4.09,10.71-6.12,2.44-1.39,4.9-2.73,7.32-4.15,2.16-1.26,4.26-2.62,6.42-3.89,2.16-1.27,4.37-2.45,6.53-3.72,2.46-1.45,4.9-2.93,7.33-4.44,1.15-.72,1.51-.69,2.12.51.57,1.11,1.19,2.2,1.64,3.36.13.32-.11,1.08-.41,1.24-3.71,2.06-7.47,4.03-11.19,6.06-2.12,1.15-4.2,2.37-6.28,3.57-1.42.81-2.82,1.65-4.22,2.49-.27.16-.51.39-.76.59.02.1.04.21.06.31Z"/>
+            <path d="M47.97,60.68c-.39.81-.73,1.63-1.16,2.41-1.58,2.83-3.18,5.64-4.79,8.46-1.78,3.11-3.57,6.21-5.37,9.31-1.88,3.25-3.8,6.48-5.63,9.76-1.76,3.15-3.49,6.33-5.1,9.56-.51,1.03-.97.87-1.68.42-1.13-.71-2.29-1.37-3.37-2.15-.21-.16-.3-.85-.14-1.11,2.24-3.72,4.58-7.38,6.79-11.12,1.88-3.2,3.62-6.48,5.41-9.73.1-.18.12-.4.26-.86-.57.12-1.01.1-1.33.29-1.37.82-2.71,1.7-4.05,2.55-1.01.65-2.01,1.32-3.03,1.94-4.32,2.63-8.67,5.22-12.97,7.89-.77.48-1.08.4-1.47-.4-.6-1.23-1.29-2.42-2.01-3.59-.53-.87-.06-1.31.6-1.65,1.53-.79,3.12-1.47,4.61-2.32,2.13-1.22,4.17-2.59,6.28-3.84,3.13-1.85,6.28-3.66,9.42-5.48,2.59-1.5,5.17-3,7.77-4.48,3-1.7,6.02-3.36,9.03-5.05.58-.33,1.14-.69,1.7-1.04.08.08.16.16.23.24Z"/>
+            <path d="M51.74,62.48c0,2.97,0,5.55,0,8.12,0,4.34-.06,8.68,0,13.01.09,7.14.25,14.28.39,21.41.02,1.12.05,2.25.12,3.37.05.76-.23,1.16-1.02,1.15-1.39-.02-2.78-.04-4.17-.01-1.05.03-1.3-.46-1.28-1.44.2-7.37.36-14.75.51-22.12.01-.63-.12-1.25-.18-1.88-.11-.04-.22-.08-.34-.13-.29.38-.64.73-.87,1.15-1.88,3.4-3.74,6.81-5.6,10.22-1.67,3.07-3.35,6.13-4.99,9.22-.6,1.12-1.25,1.21-2.26.49-.83-.59-1.78-1.02-2.68-1.5-.64-.34-.83-.69-.41-1.43,1.67-2.92,3.22-5.9,4.88-8.83,1.57-2.77,3.2-5.51,4.81-8.25,2.78-4.72,5.59-9.41,8.33-14.15,1.45-2.5,2.77-5.07,4.15-7.6.1-.18.25-.32.62-.8Z"/>
+            <path d="M73.6,35.58c7.88-4.74,15.55-9.36,23.17-13.94.83,1.42,1.56,2.74,2.35,4.02.54.86.24,1.31-.56,1.75-3.12,1.72-6.22,3.47-9.32,5.21-2.75,1.55-5.52,3.08-8.24,4.68-3.44,2.01-6.83,4.09-10.27,6.1-3.59,2.09-7.2,4.14-10.81,6.2-.25.14-.55.19-.98.34.06-.37.03-.63.14-.82,1.46-2.46,2.95-4.89,4.4-7.36,1.87-3.17,3.72-6.35,5.56-9.54,1.83-3.18,3.65-6.36,5.43-9.57,1.28-2.3,2.46-4.66,3.72-6.97,1.16-2.12,2.35-4.23,3.6-6.3.16-.27.83-.53,1.05-.41,1.21.67,2.33,1.49,3.52,2.19.64.38.72.82.37,1.4-1.96,3.21-3.95,6.4-5.88,9.62-1.11,1.85-2.14,3.74-3.22,5.61-.3.52-.69,1-.99,1.53-1.02,1.81-2.02,3.62-3.01,5.45-.07.12,0,.32,0,.8Z"/>
+            <path d="M26.04,47.73c-1.4-.9-2.76-1.85-4.2-2.68-3.82-2.2-7.67-4.36-11.52-6.5-1.99-1.11-4-2.17-6.04-3.18-.72-.36-.91-.7-.5-1.4.83-1.41,1.63-2.84,2.46-4.31,13.55,7.86,27.09,15.72,40.64,23.58-.02.11-.03.22-.05.33-.52.06-1.04.17-1.56.17-7.77-.05-15.55-.13-23.32-.16-6.91-.03-13.82-.02-20.73.02-.92,0-1.27-.23-1.21-1.17.08-1.3.06-2.6.09-3.9.02-.66.3-.83,1-.8,5.38.23,10.76.41,16.14.58,2.21.07,4.43.08,6.64.08.68,0,1.35-.11,2.03-.17.04-.17.09-.33.13-.5Z"/>
+            <path d="M60.98,27.17c1.05-1.49,1.92-2.65,2.69-3.86.62-.98,1.13-2.03,1.67-3.05,2.13-4.01,4.26-8.03,6.37-12.05.58-1.11,1.1-2.25,1.68-3.35.33-.62.78-.68,1.4-.3,1.06.67,2.17,1.25,3.26,1.88.59.34.72.74.33,1.39-1.88,3.14-3.75,6.3-5.56,9.48-1.23,2.18-2.35,4.41-3.52,6.62-.16.31-.33.61-.51.91-1.46,2.4-3,4.75-4.37,7.21-2.12,3.8-4.08,7.69-6.17,11.5-.79,1.43-1.74,2.77-2.94,4.17-.08-.64-.25-1.28-.24-1.92.08-5.56.24-11.11.3-16.67.09-9.04.14-18.08.19-27.12.01-1.93,0-1.94,1.97-1.9.78.01,1.57.08,2.34.02,1.1-.09,1.47.37,1.42,1.43-.13,2.52-.21,5.04-.27,7.56-.1,3.78-.17,7.56-.24,11.33-.03,1.77-.06,3.55-.06,5.32,0,.32.12.64.27,1.4Z"/>
+            <path d="M25.33,62.68c-1.15-.05-2.3-.15-3.45-.14-6.6.06-13.19.07-19.78.26-2.26.06-1.89.16-1.96-1.99-.03-.82-.03-1.65-.08-2.47-.05-.97.11-1.46,1.36-1.42,4.6.13,9.2.09,13.8.14,3.56.03,7.12.14,10.68.14,6.29,0,12.58-.04,18.88-.06.45,0,.9,0,1.43.29-.25.2-.48.44-.75.6-4.79,2.76-9.59,5.5-14.38,8.26-5.53,3.19-11.07,6.37-16.58,9.6-2.39,1.4-4.75,2.85-7.09,4.33-.86.54-1.41.64-1.94-.43-.53-1.08-1.25-2.07-1.91-3.09-.43-.65-.34-1.02.4-1.41,5.48-2.93,10.95-5.9,16.41-8.87,1.37-.74,2.72-1.52,4.05-2.32.41-.24.74-.62,1.1-.93-.06-.16-.12-.31-.19-.47Z"/>
+            <path d="M81.33,63.04c1.91,1.13,3.46,2.14,5.09,3,2.53,1.32,5.12,2.51,7.66,3.8,3.2,1.62,6.37,3.28,9.56,4.92.73.37.93.74.38,1.51-.7.98-1.3,2.04-1.83,3.12-.46.94-1,1.01-1.84.51-2.98-1.76-5.98-3.5-8.98-5.23-6.26-3.6-12.53-7.19-18.8-10.77-3.57-2.04-7.15-4.06-10.72-6.1-.1-.06-.15-.2-.46-.61,1.17,0,2.12,0,3.06,0,7.08,0,14.17,0,21.25.02,5.56,0,11.11.03,16.67.02,1.3,0,2.6-.08,3.89-.18.77-.06,1.2.25,1.2,1-.01,1.39-.09,2.77-.15,4.16-.04.92-.31,1.29-1.44,1.25-7.72-.31-15.45-.49-23.18-.7-.32,0-.64.13-1.36.29Z"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          CURATED MEDIA CATEGORIES
+        </div>
+        <h2 class="section-title">
+          Poster & <em class="cursive-accent">Thumbnail</em> Gallery
+        </h2>
+        <p class="section-subtitle">Categorized showcase featuring cultural event posters, high-CTR YouTube thumbnails, and educational admission designs.</p>
+
+        <!-- Category Filter Tabs -->
+        <div class="tools-filter-tabs">
+          <button class="tool-tab-btn cat-tab-btn active" data-category-filter="all">All Media</button>
+          <button class="tool-tab-btn cat-tab-btn" data-category-filter="event">1st Category: Event Posters</button>
+          <button class="tool-tab-btn cat-tab-btn" data-category-filter="youtube">2nd Category: YouTube Thumbnails</button>
+          <button class="tool-tab-btn cat-tab-btn" data-category-filter="admission">3rd Category: Admission Posters</button>
+        </div>
+
+        <!-- 3-Category Cards Grid -->
+        <div class="category-showcase-grid">
+          
+          <!-- Category 1 Card: Event Posters (Sahityotsav Poster) -->
+          <article class="category-card" data-cat="event" data-cursor-view data-cursor-text="EVENT">
+            <div class="category-card-img-wrapper">
+              <img src="assets/event-poster-sahityotsav.jpg" alt="SSF Kuttiady Division Sahityotsav Event Poster" class="category-card-img">
+            </div>
+            <div class="category-card-body">
+              <div>
+                <div class="category-card-tag">1ST CATEGORY • EVENT POSTER</div>
+                <h3 class="category-card-title">SSF Kuttiady Division — Sahityotsav '25</h3>
+                <p class="category-card-desc">Decoding the Symbols theme poster design with vibrant 3D icons and modern cultural typography.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 2 Card: YouTube Thumbnails (Velom TV Highlights) -->
+          <article class="category-card" data-cat="youtube" data-cursor-view data-cursor-text="YOUTUBE">
+            <div class="category-card-img-wrapper thumbnail-ratio">
+              <img src="assets/youtube-thumb-velomtv.jpg" alt="Velom TV Mooidu Usthad Snehadaram Highlights YouTube Thumbnail" class="category-card-img">
+            </div>
+            <div class="category-card-body">
+              <div>
+                <div class="category-card-tag">2ND CATEGORY • YOUTUBE THUMBNAIL</div>
+                <h3 class="category-card-title">Velom TV — Snehadaram Highlights</h3>
+                <p class="category-card-desc">High-CTR YouTube thumbnail composition featuring portrait cutouts, golden lanterns, and bold Malayalam typography.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 3 Card: Admission Posters (Noon Kids Preschool) -->
+          <article class="category-card" data-cat="admission" data-cursor-view data-cursor-text="ADMISSION">
+            <div class="category-card-img-wrapper">
+              <img src="assets/admission-poster-noonkids.jpg" alt="Noon Kids Preschool Admission Open Poster Badriya Cultural Centre" class="category-card-img">
+            </div>
+            <div class="category-card-body">
+              <div>
+                <div class="category-card-tag">3RD CATEGORY • ADMISSION POSTER</div>
+                <h3 class="category-card-title">Noon Kids Preschool — Admission Open</h3>
+                <p class="category-card-desc">Warm educational enrollment campaign poster for Badriya Cultural Centre with friendly kid portrait imagery.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE POLAROID PHOTO WALL -->
+    <section id="polaroid-wall" class="section" style="position: relative; overflow: hidden;">
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          CREATIVE MEMORIES & HIGHLIGHTS
+        </div>
+        <h2 class="section-title">
+          Interactive <em class="cursive-accent">Polaroid</em> Wall
+        </h2>
+        <p class="section-subtitle">Click and explore captured moments from creative campaigns and visual direction.</p>
+
+        <div class="polaroid-grid-container">
+          
+          <div class="polaroid-card viewfinder-trigger" data-img="assets/campaign-tahta-identity.jpg" data-iso="100" data-aperture="f/1.8" data-shutter="1/1000s" data-lens="50mm GM" data-cam="SONY α7 IV" style="--rot: -4deg;">
+            <div class="polaroid-img-box">
+              <img src="assets/campaign-tahta-identity.jpg" alt="Tahta Qadamika Identity">
+            </div>
+            <div class="polaroid-caption">Tahta Qadamika — Green Identity</div>
+          </div>
+
+          <div class="polaroid-card viewfinder-trigger" data-img="assets/campaign-annur-poster.jpg" data-iso="200" data-aperture="f/2.8" data-shutter="1/500s" data-lens="35mm GM" data-cam="SONY α7 IV" style="--rot: 3deg;">
+            <div class="polaroid-img-box">
+              <img src="assets/campaign-annur-poster.jpg" alt="An-Nur 1500 Campaign">
+            </div>
+            <div class="polaroid-caption">An-Nur 1500 Meelad Fete</div>
+          </div>
+
+          <div class="polaroid-card viewfinder-trigger" data-img="assets/project-isra-malayalam.jpg" data-iso="160" data-aperture="f/1.4" data-shutter="1/1250s" data-lens="85mm GM" data-cam="SONY α7 IV" style="--rot: -3deg;">
+            <div class="polaroid-img-box">
+              <img src="assets/project-isra-malayalam.jpg" alt="Isra Tybah Garden Poster">
+            </div>
+            <div class="polaroid-caption">Isra Tybah Conference</div>
+          </div>
+
+          <div class="polaroid-card viewfinder-trigger" data-img="assets/project-royal-qamees.jpg" data-iso="400" data-aperture="f/2.0" data-shutter="1/800s" data-lens="50mm GM" data-cam="SONY α7 IV" style="--rot: 5deg;">
+            <div class="polaroid-img-box">
+              <img src="assets/project-royal-qamees.jpg" alt="Royal Qamees Eid Campaign">
+            </div>
+            <div class="polaroid-caption">Royal Qamees Luxury</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SELECTED WORKS SHOWCASE (SPLIT-SCREEN MODEL) -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          FEATURED CASE STUDIES
+        </div>
+        <h2 class="section-title">
+          Selected <em class="cursive-accent">Works</em> & Case Studies
+        </h2>
+        <p class="section-subtitle">Immersive branding, editorial poster art, video direction, and identity campaigns crafted by maq.cr.</p>
+
+        <div class="works-showcase-container">
+          
+          <!-- Case Study 1: Tahta Qadamika Identity -->
+          <article class="work-showcase-card" data-cursor-view data-cursor-text="CASE STUDY">
+            <div class="work-img-box">
+              <img src="assets/campaign-tahta-identity.jpg" alt="Tahta Qadamika The Core of Green Identity" class="work-img-preview">
+              <div class="work-img-overlay"></div>
+            </div>
+
+            <div class="work-content-box">
+              <div class="work-badge-row">
+                <span class="work-category-pill">BRAND IDENTITY • TYPOGRAPHY</span>
+                <span class="work-year-tag">2026</span>
+              </div>
+              <h3 class="work-title">Tahta Qadamika — The Core of Green</h3>
+              <p class="work-description">
+                Comprehensive campaign identity featuring bold green & yellow Arabic typography, brand architecture, and typography standards.
+              </p>
+              <div class="work-action-row">
+                <a href="#contact" class="btn btn-gradient magnetic" style="padding: 0.8rem 1.8rem; font-size: 0.85rem;">
+                  <span>Explore Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 2: An-Nur Meelad Fete -->
+          <article class="work-showcase-card" data-cursor-view data-cursor-text="CASE STUDY">
+            <div class="work-img-box">
+              <img src="assets/campaign-annur-poster.jpg" alt="An-Nur 1500 Meelad Fete '25 Poster" class="work-img-preview">
+              <div class="work-img-overlay"></div>
+            </div>
+
+            <div class="work-content-box">
+              <div class="work-badge-row">
+                <span class="work-category-pill">EDITORIAL • EVENT CAMPAIGN</span>
+                <span class="work-year-tag">2025</span>
+              </div>
+              <h3 class="work-title">An-Nur 1500 Meelad Fete '25</h3>
+              <p class="work-description">
+                Official Nadi Da'wa Isra Vatanappally leadership poster composition and event editorial visual system.
+              </p>
+              <div class="work-action-row">
+                <a href="#contact" class="btn btn-gradient magnetic" style="padding: 0.8rem 1.8rem; font-size: 0.85rem;">
+                  <span>Explore Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 4-STEP CREATIVE PROCESS SECTION -->
+    <section id="process" class="section">
+      <div class="container">
+        
+        <div class="process-header-row">
+          <div>
+            <div class="tag-badge">
+              <span class="tag-badge-dot"></span>
+              CREATIVE WORKFLOW
+            </div>
+            <h2 class="section-title" style="margin-bottom: 0;">
+              You're 4 steps away from<br>
+              a new <em class="cursive-accent">Brand System</em>
+            </h2>
+          </div>
+
+          <div class="process-callout-pill">
+            <i class="fa-solid fa-sparkles"></i>
+            Seamlessly smooth, every step of the way.
+          </div>
+        </div>
+
+        <!-- 4 Process Cards Grid -->
+        <div class="process-cards-grid">
+          
+          <div class="process-card">
+            <div>
+              <div class="process-icon-badge">✦</div>
+              <h3 class="process-card-title">01 Discovery</h3>
+              <p class="process-card-desc">Share your brand vision, campaign goals, and design requirements upfront.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div>
+              <div class="process-icon-badge">⚡</div>
+              <h3 class="process-card-title">02 Design & Edit</h3>
+              <p class="process-card-desc">Crafting bespoke poster art, video edits, and editorial visual systems.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div>
+              <div class="process-icon-badge">✳</div>
+              <h3 class="process-card-title">03 Review & Refine</h3>
+              <p class="process-card-desc">Collaborative feedback loops and fine-tuning until absolute perfection.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div>
+              <div class="process-icon-badge">👁</div>
+              <h3 class="process-card-title">04 Final Delivery</h3>
+              <p class="process-card-desc">Receive high-resolution production assets and master exports ready for launch.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. TOOLS & SOFTWARE MATRIX SECTION -->
+    <section id="tools" class="section" style="position: relative; overflow: hidden;">
+      
+      <!-- SVG 1: Geometric Hexagram Emblem Background Watermark -->
+      <div class="svg-bg-watermark svg-spin-rotate" style="width: 520px; height: 520px; left: -10%; bottom: -10%;">
+        <svg viewBox="0 0 105.59 113.64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M104.87,36.42l.72-1.26-.72-1.26-6.76-11.71h-25.01l-4.61-7.98h0l-7.49-12.96-.72-1.26h-14.97l-.36.63h0l-2.04,3.53-4.72,8.16-.71,1.24-.37.64-4.61,7.98H7.49l-.73,1.26L0,35.16l12.5,21.65h0S.72,77.22.72,77.22l-.72,1.26.72,1.26,6.77,11.7h25l12.1,20.95.72,1.26h14.98l12.81-22.21h25.01l.72-1.26,6.76-11.7-12.5-21.66,11.78-20.4ZM74.55,24.71h22.11l5.3,9.19h-46.29l5.31-9.19h13.57ZM65.58,14.21l4.61,7.98h-10.67l-6.76,11.71-1.45,2.52-6.76,11.71-3.56,6.18-5.31-9.19L59.55,3.77l6.03,10.44ZM47.46,48.13h10.67l5.02,8.7-5.02,8.7h-10.66l-5.03-8.7,5.02-8.7ZM40.01,14.21h0l5.55-9.63,1.2-2.07h10.61l-23.14,40.08-5.31-9.19,6.48-11.21,4.6-7.98ZM31.04,24.71l-5.02,8.7,6.76,11.71,1.45,2.52,6.76,11.71,3.57,6.18h-10.61l-11.14-19.28-12.43-21.53h20.65ZM8.21,25.97l12.43,21.53,10.41,18.02h-10.61L2.9,35.16l5.31-9.19ZM13.95,59.34l5.03,8.7h37.69l-5.3,9.19H3.63l10.32-17.89ZM31.04,88.92H8.94l-5.31-9.18h46.28l-5.29,9.18h-13.58ZM46.04,109.87l-10.64-18.43h10.67l6.75-11.7l1.45-2.52,6.76-11.71,3.57-6.18,5.31,9.18-23.87,41.35ZM70.2,91.44l-11.36,19.69h-10.62l23.14-40.09,5.31,9.19-6.47,11.21ZM74.56,88.92l5.01-8.7-6.76-11.71-1.45-2.52-6.76-11.7-3.56-6.18h10.62l16.79,29.1h0l3.5,6.06,3.25,5.64h-20.65ZM102.69,78.48l-5.31,9.18-5.66-9.81-.14-.23-.23-.4-16.8-29.1h10.61l6.47,11.21,11.05,19.14ZM86.62,45.61h-37.7l5.31-9.19h47.74l-10.32,17.89-5.02-8.7Z"/>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          CREATIVE TECH MATRIX
+        </div>
+        <h2 class="section-title">
+          Tools & <em class="cursive-accent">Software</em> Mastery
+        </h2>
+        <p class="section-subtitle">A curated suite of professional design, video editing, motion graphics, and development technologies.</p>
+
+        <!-- Filter Tabs -->
+        <div class="tools-filter-tabs">
+          <button class="tool-tab-btn active" data-filter="all">All Stack</button>
+          <button class="tool-tab-btn" data-filter="design">Design & Art</button>
+          <button class="tool-tab-btn" data-filter="video">Video & Motion</button>
+          <button class="tool-tab-btn" data-filter="code">Code & Web</button>
+        </div>
+
+        <!-- 3D Tool Matrix Grid -->
+        <div class="grid-4">
+          
+          <div class="tool-matrix-card" data-category="design" data-level="95%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-paintbrush"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">Adobe Photoshop</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Poster & Art Direction</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="design" data-level="92%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-vector-square"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">Adobe Illustrator</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Vector & Branding</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="video" data-level="90%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-scissors"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">Adobe Premiere Pro</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Commercial Video Edits</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="video" data-level="88%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">After Effects</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Motion Callouts & VFX</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="video" data-level="88%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-sliders"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">DaVinci Resolve</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Color Grading & Finishing</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="design" data-level="92%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-brands fa-figma"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">Figma</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">UI/UX & Wireframing</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="code" data-level="85%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">VS Code / HTML5</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Frontend Architecture</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+          <div class="tool-matrix-card" data-category="code" data-level="95%">
+            <div class="tool-card-header">
+              <div class="tool-icon-box"><i class="fa-solid fa-robot"></i></div>
+              <div>
+                <h3 style="font-size: 1.2rem;">AI Creative Engines</h3>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Generative Art Workflows</div>
+              </div>
+            </div>
+            <div class="tool-level-bar-bg"><div class="tool-level-bar-fill"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          SERVICES & CAPABILITIES
+        </div>
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Tailored creative and technical solutions designed for modern brands and media agencies.</p>
+
+        <div class="grid-2">
+          
+          <div class="glass-card">
+            <i class="fa-solid fa-palette" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1.2rem;"></i>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">Graphic & Brand Design</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">Minimal luxury brand identities, logos, editorial publication layouts, social media posters, and visual style guides.</p>
+          </div>
+
+          <div class="glass-card">
+            <i class="fa-solid fa-film" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1.2rem;"></i>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">Video Editing & Motion Graphics</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">Cinematic commercial edits, DaVinci Resolve color grading, Premiere Pro sound design, and After Effects motion callouts.</p>
+          </div>
+
+          <div class="glass-card">
+            <i class="fa-solid fa-pen-nib" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1.2rem;"></i>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">Content Strategy & Copywriting</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">Persuasive brand storytelling, landing page copywriting, technical whitepapers, and video script writing.</p>
+          </div>
+
+          <div class="glass-card">
+            <i class="fa-solid fa-compass-drafting" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1.2rem;"></i>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">UI/UX & Frontend Development</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">Designing dark-mode dashboard interfaces, Figma wireframes, responsive web apps, and modern smooth-scroll layouts.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          CAREER MILESTONES
+        </div>
+        <h2 class="section-title">Experience Timeline</h2>
+
+        <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem;">
+          <div class="glass-card" style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem;">
+            <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent);">2025 — PRESENT</div>
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.4rem;">Lead Visual Designer & Video Editor</h3>
+              <div style="color: var(--text-secondary);">Freelance & Media Agencies</div>
+            </div>
+          </div>
+
+          <div class="glass-card" style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem;">
+            <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent);">2024 — PRESENT</div>
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.4rem;">Bachelor of Computer Applications (BCA)</h3>
+              <div style="color: var(--text-secondary);">Computer Science Department</div>
+            </div>
+          </div>
+
+          <div class="glass-card" style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem;">
+            <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent);">2023 — 2024</div>
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.4rem;">Campus Media & Editorial Coordinator</h3>
+              <div style="color: var(--text-secondary);">Cultural & Media Society</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE JOURNEY TIMELINE -->
+    <section id="timeline" class="section" style="position: relative;">
+      <div class="container">
+        <div class="tag-badge">
+          <span class="tag-badge-dot"></span>
+          CAREER GROWTH & MILESTONES
+        </div>
+        <h2 class="section-title">
+          Creative <em class="cursive-accent">Journey</em> Timeline
+        </h2>
+        <p class="section-subtitle">Key milestones in graphic design, photography, video production, and computer science.</p>
+
+        <div class="timeline-track">
+          
+          <div class="timeline-milestone-item">
+            <div class="timeline-milestone-dot"></div>
+            <div class="glass-card" style="padding: 1.8rem;">
+              <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent); margin-bottom: 0.3rem;">2020 • THE SPARK</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">First Camera & Visual Storytelling</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65;">Began experimenting with portrait photography, camera exposure rules, and digital art direction in Kerala.</p>
+            </div>
+          </div>
+
+          <div class="timeline-milestone-item">
+            <div class="timeline-milestone-dot"></div>
+            <div class="glass-card" style="padding: 1.8rem;">
+              <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent); margin-bottom: 0.3rem;">2022 • BRAND ARCHITECTURE</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">First Commercial Branding Project</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65;">Designed bespoke visual identity systems, typography guidelines, and event poster campaigns for cultural organizations.</p>
+            </div>
+          </div>
+
+          <div class="timeline-milestone-item">
+            <div class="timeline-milestone-dot"></div>
+            <div class="glass-card" style="padding: 1.8rem;">
+              <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent); margin-bottom: 0.3rem;">2024 • COMPUTER SCIENCE</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Enrolled in BCA Degree Program</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65;">Combining frontend algorithms, UI/UX design engineering, and modern web application development.</p>
+            </div>
+          </div>
+
+          <div class="timeline-milestone-item">
+            <div class="timeline-milestone-dot"></div>
+            <div class="glass-card" style="padding: 1.8rem;">
+              <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent); margin-bottom: 0.3rem;">2026 • EXECUTIVE DIRECTION</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Lead Visual Director at maq.cr</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65;">Producing 4K commercial videos, luxury brand identity systems, and interactive digital portfolio experiences.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CENTERED FLOATING GLASS CONTACT CARD (900px) & CONTACT CHIPS -->
+    <section id="contact" class="section">
+      <div class="container centered-contact-wrapper">
+        
+        <div class="tag-badge" style="margin-bottom: 2rem;">
+          <span class="tag-badge-dot"></span>
+          GET IN TOUCH
+        </div>
+
+        <!-- 900px Centered Floating Glass Card -->
+        <div class="centered-glass-contact-card">
+          
+          <!-- Left Side (50% Width): Oversized Heading with Cursive Accent -->
+          <div>
+            <h2 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); line-height: 1.02; font-weight: 800;">
+              LET'S BUILD<br>
+              SOMETHING<br>
+              <em class="cursive-accent">REMARKABLE.</em>
+            </h2>
+            <p style="color: var(--text-secondary); margin-top: 1.5rem; line-height: 1.7; font-size: 1.05rem;">
+              Have a vision, brand identity, or motion project in mind? Let's turn your idea into an extraordinary reality.
+            </p>
+          </div>
+
+          <!-- Right Side (50% Width): Minimal Form with Focus Glow -->
+          <div>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+              <!-- Direct Email Delivery Configuration (mohammedvelom.in@gmail.com) -->
+              <input type="hidden" name="subject" value="New Inquiry from maq.cr Portfolio">
+              <input type="hidden" name="from_name" value="maq.cr Portfolio Contact">
+              <input type="hidden" name="to_email" value="mohammedvelom.in@gmail.com">
+
+              <div class="form-group">
+                <input type="text" name="name" id="name" required class="form-input" placeholder="Your Name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" id="email" required class="form-input" placeholder="your.email@example.com">
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="project" id="project" class="form-input" placeholder="Project Type (e.g. Branding, Video)">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" id="message" required class="form-textarea" placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gradient magnetic" style="width: 100%;">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Floating Glass Contact Chips (Pill Buttons) -->
+        <div class="contact-chips-row">
+          <a href="mailto:mohammedvelom.in@gmail.com" class="contact-chip-pill magnetic">
+            <i class="fa-regular fa-envelope"></i>
+            <span>mohammedvelom.in@gmail.com</span>
+          </a>
+
+          <a href="https://wa.me/919747008103?text=Hello!%20Mohammed%20Velom%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="contact-chip-pill magnetic">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/mohammedvelom1/" target="_blank" rel="noopener" class="contact-chip-pill magnetic">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://www.behance.net/maqcr" target="_blank" rel="noopener" class="contact-chip-pill magnetic">
+            <i class="fa-brands fa-behance"></i>
+            <span>Behance</span>
+          </a>
+
+          <a href="https://instagram.com/maq.cr" target="_blank" rel="noopener" class="contact-chip-pill magnetic">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 12. DIZNR-INSPIRED PREMIUM FOOTER -->
+    <footer class="diznr-footer" style="position: relative;">
+      
+      <!-- SVG 3: Radial Starburst Cluster Watermark behind Footer Title -->
+      <div class="svg-bg-watermark svg-star-pulse" style="width: 650px; height: 650px; top: 10%; left: 50%; transform: translateX(-50%); opacity: 0.05;">
+        <svg viewBox="0 0 107.53 109.59" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M73.11,75.38c.13.34.21.7.39,1.01,1.21,2.1,2.42,4.2,3.66,6.29,2.12,3.59,4.24,7.17,6.41,10.73.8,1.31,1.71,2.55,2.59,3.81.43.61.4,1.12-.26,1.52-1.29.79-2.54,1.64-3.9,2.29-.28.14-1.13-.34-1.36-.74-1.78-3.14-3.45-6.35-5.2-9.51-1.9-3.44-3.85-6.84-5.76-10.27-1.85-3.32-3.65-6.67-5.5-9.99-1.88-3.39-3.79-6.77-5.82-10.39.44.16.69.22.91.35,3.52,1.99,7.03,4,10.56,5.97,2.41,1.34,4.86,2.6,7.26,3.95,2.14,1.21,4.22,2.53,6.36,3.74,2.18,1.24,4.4,2.42,6.6,3.6,3.04,1.63,6.11,3.22,9.11,4.93.31.18.46,1.2.25,1.61-.68,1.34-1.51,2.61-2.39,3.82-.17.23-.95.26-1.27.08-1.76-1.01-3.45-2.12-5.17-3.19-3.15-1.95-6.29-3.93-9.47-5.84-2.1-1.26-4.25-2.44-6.39-3.63-.4-.22-.87-.3-1.31-.44-.1.09-.19.18-.29.27Z"/>
+            <path d="M34.06,35.33c-.8-1.43-1.43-2.57-2.07-3.7-1.4-2.46-2.8-4.92-4.24-7.36-1.56-2.64-3.18-5.26-4.77-7.89-.87-1.44-1.75-2.86-2.53-4.35-.14-.26.09-.97.36-1.14,1.28-.81,2.61-1.54,3.98-2.2.26-.13.94.06,1.08.31,1.62,2.71,3.2,5.45,4.74,8.21,1.71,3.09,3.37,6.2,5.04,9.31,1.24,2.32,2.42,4.68,3.71,6.97,1.31,2.34,2.77,4.6,4.09,6.94,1.31,2.33,2.53,4.71,3.8,7.06.36.67.78,1.32,1.37,2.31-.69-.13-1.11-.11-1.42-.28-3.28-1.85-6.55-3.72-9.81-5.6-4.3-2.49-8.6-5-12.89-7.5-3.17-1.85-6.34-3.71-9.51-5.57-2.04-1.2-4.08-2.41-6.13-3.61-.8-.47-1.1-.98-.52-1.9.64-1.01,1.1-2.14,1.66-3.2.32-.61.69-.72,1.36-.3,3.39,2.16,6.82,4.23,10.22,6.38,2.18,1.38,4.29,2.88,6.49,4.23,1.62.99,3.33,1.83,5,2.71.16.09.38.06.99.15Z"/>
+            <path d="M55.33,62.46c1.82,3.18,3.64,6.35,5.47,9.52,1.7,2.95,3.45,5.87,5.11,8.85,1.56,2.78,2.99,5.64,4.55,8.42,1.24,2.21,2.62,4.35,3.89,6.55,1.24,2.16,2.45,4.35,3.56,6.58.16.32-.17,1.14-.52,1.41-.96.73-2.13,1.18-3.06,1.94-1.01.82-1.41.34-1.84-.54-1.4-2.87-2.76-5.77-4.26-8.59-2.1-3.96-4.31-7.85-6.49-11.77-.22-.4-.56-.74-1.19-1.07-.05,1.27-.19,2.55-.15,3.82.19,6.85.39,13.7.65,20.54.04,1.16-.31,1.55-1.46,1.45-1.16-.1-2.35-.08-3.52-.03-.89.04-1.28-.28-1.28-1.18,0-5.17-.01-10.33-.04-15.5-.02-3.13-.13-6.25-.1-9.38.06-6.25.19-12.49.29-18.74.01-.76,0-1.52,0-2.27.14,0,.27-.01.41-.02Z"/>
+            <path d="M46.31,26.62c.09-1.49.27-2.98.27-4.47-.02-6.77-.09-13.54-.15-20.31q-.01-1.79,1.77-1.79c.83,0,1.66.02,2.48-.04,1.08-.08,1.59.24,1.56,1.45-.1,3.42-.1,6.84-.12,10.27-.02,2.77-.01,5.53-.03,8.3-.05,7.51-.1,15.01-.14,22.52,0,1.39.06,2.78.07,4.17,0,.44-.04.88-.07,1.33-.13.04-.27.08-.4.12-.45-.69-.94-1.36-1.35-2.08-1.64-2.9-3.26-5.8-4.86-8.72-1.29-2.34-2.49-4.73-3.81-7.05-1.46-2.56-3.05-5.04-4.5-7.6-1.78-3.16-3.45-6.38-5.2-9.55-1.06-1.93-2.22-3.8-3.24-5.74-.17-.32-.07-1.12.18-1.28,1.15-.77,2.4-1.39,3.61-2.06.77-.42,1.22-.25,1.63.59,1.75,3.61,3.53,7.22,5.39,10.77,1.51,2.86,3.16,5.64,4.75,8.46.53.95,1.03,1.92,1.54,2.87.21-.05.42-.1.63-.15Z"/>
+            <path d="M80.86,48.26c.57.05,1.14.14,1.71.13,4.77-.09,9.55-.16,14.32-.32,3.12-.1,6.25-.29,9.36-.51,1.01-.07,1.33.25,1.27,1.22-.08,1.08-.15,2.18-.06,3.25.11,1.4-.5,1.8-1.81,1.79-4.82-.03-9.64.06-14.47.02-8.29-.06-16.59-.18-24.88-.26-1.6-.02-3.21.05-4.82.07-.32,0-.64-.05-1.07-.36.39-.28.77-.59,1.19-.83,3.57-2.05,7.14-4.09,10.71-6.12,2.44-1.39,4.9-2.73,7.32-4.15,2.16-1.26,4.26-2.62,6.42-3.89,2.16-1.27,4.37-2.45,6.53-3.72,2.46-1.45,4.9-2.93,7.33-4.44,1.15-.72,1.51-.69,2.12.51.57,1.11,1.19,2.2,1.64,3.36.13.32-.11,1.08-.41,1.24-3.71,2.06-7.47,4.03-11.19,6.06-2.12,1.15-4.2,2.37-6.28,3.57-1.42.81-2.82,1.65-4.22,2.49-.27.16-.51.39-.76.59.02.1.04.21.06.31Z"/>
+            <path d="M47.97,60.68c-.39.81-.73,1.63-1.16,2.41-1.58,2.83-3.18,5.64-4.79,8.46-1.78,3.11-3.57,6.21-5.37,9.31-1.88,3.25-3.8,6.48-5.63,9.76-1.76,3.15-3.49,6.33-5.1,9.56-.51,1.03-.97.87-1.68.42-1.13-.71-2.29-1.37-3.37-2.15-.21-.16-.3-.85-.14-1.11,2.24-3.72,4.58-7.38,6.79-11.12,1.88-3.2,3.62-6.48,5.41-9.73.1-.18.12-.4.26-.86-.57.12-1.01.1-1.33.29-1.37.82-2.71,1.7-4.05,2.55-1.01.65-2.01,1.32-3.03,1.94-4.32,2.63-8.67,5.22-12.97,7.89-.77.48-1.08.4-1.47-.4-.6-1.23-1.29-2.42-2.01-3.59-.53-.87-.06-1.31.6-1.65,1.53-.79,3.12-1.47,4.61-2.32,2.13-1.22,4.17-2.59,6.28-3.84,3.13-1.85,6.28-3.66,9.42-5.48,2.59-1.5,5.17-3,7.77-4.48,3-1.7,6.02-3.36,9.03-5.05.58-.33,1.14-.69,1.7-1.04.08.08.16.16.23.24Z"/>
+            <path d="M51.74,62.48c0,2.97,0,5.55,0,8.12,0,4.34-.06,8.68,0,13.01.09,7.14.25,14.28.39,21.41.02,1.12.05,2.25.12,3.37.05.76-.23,1.16-1.02,1.15-1.39-.02-2.78-.04-4.17-.01-1.05.03-1.3-.46-1.28-1.44.2-7.37.36-14.75.51-22.12.01-.63-.12-1.25-.18-1.88-.11-.04-.22-.08-.34-.13-.29.38-.64.73-.87,1.15-1.88,3.4-3.74,6.81-5.6,10.22-1.67,3.07-3.35,6.13-4.99,9.22-.6,1.12-1.25,1.21-2.26.49-.83-.59-1.78-1.02-2.68-1.5-.64-.34-.83-.69-.41-1.43,1.67-2.92,3.22-5.9,4.88-8.83,1.57-2.77,3.2-5.51,4.81-8.25,2.78-4.72,5.59-9.41,8.33-14.15,1.45-2.5,2.77-5.07,4.15-7.6.1-.18.25-.32.62-.8Z"/>
+            <path d="M73.6,35.58c7.88-4.74,15.55-9.36,23.17-13.94.83,1.42,1.56,2.74,2.35,4.02.54.86.24,1.31-.56,1.75-3.12,1.72-6.22,3.47-9.32,5.21-2.75,1.55-5.52,3.08-8.24,4.68-3.44,2.01-6.83,4.09-10.27,6.1-3.59,2.09-7.2,4.14-10.81,6.2-.25.14-.55.19-.98.34.06-.37.03-.63.14-.82,1.46-2.46,2.95-4.89,4.4-7.36,1.87-3.17,3.72-6.35,5.56-9.54,1.83-3.18,3.65-6.36,5.43-9.57,1.28-2.3,2.46-4.66,3.72-6.97,1.16-2.12,2.35-4.23,3.6-6.3.16-.27.83-.53,1.05-.41,1.21.67,2.33,1.49,3.52,2.19.64.38.72.82.37,1.4-1.96,3.21-3.95,6.4-5.88,9.62-1.11,1.85-2.14,3.74-3.22,5.61-.3.52-.69,1-.99,1.53-1.02,1.81-2.02,3.62-3.01,5.45-.07.12,0,.32,0,.8Z"/>
+            <path d="M26.04,47.73c-1.4-.9-2.76-1.85-4.2-2.68-3.82-2.2-7.67-4.36-11.52-6.5-1.99-1.11-4-2.17-6.04-3.18-.72-.36-.91-.7-.5-1.4.83-1.41,1.63-2.84,2.46-4.31,13.55,7.86,27.09,15.72,40.64,23.58-.02.11-.03.22-.05.33-.52.06-1.04.17-1.56.17-7.77-.05-15.55-.13-23.32-.16-6.91-.03-13.82-.02-20.73.02-.92,0-1.27-.23-1.21-1.17.08-1.3.06-2.6.09-3.9.02-.66.3-.83,1-.8,5.38.23,10.76.41,16.14.58,2.21.07,4.43.08,6.64.08.68,0,1.35-.11,2.03-.17.04-.17.09-.33.13-.5Z"/>
+            <path d="M60.98,27.17c1.05-1.49,1.92-2.65,2.69-3.86.62-.98,1.13-2.03,1.67-3.05,2.13-4.01,4.26-8.03,6.37-12.05.58-1.11,1.1-2.25,1.68-3.35.33-.62.78-.68,1.4-.3,1.06.67,2.17,1.25,3.26,1.88.59.34.72.74.33,1.39-1.88,3.14-3.75,6.3-5.56,9.48-1.23,2.18-2.35,4.41-3.52,6.62-.16.31-.33.61-.51.91-1.46,2.4-3,4.75-4.37,7.21-2.12,3.8-4.08,7.69-6.17,11.5-.79,1.43-1.74,2.77-2.94,4.17-.08-.64-.25-1.28-.24-1.92.08-5.56.24-11.11.3-16.67.09-9.04.14-18.08.19-27.12.01-1.93,0-1.94,1.97-1.9.78.01,1.57.08,2.34.02,1.1-.09,1.47.37,1.42,1.43-.13,2.52-.21,5.04-.27,7.56-.1,3.78-.17,7.56-.24,11.33-.03,1.77-.06,3.55-.06,5.32,0,.32.12.64.27,1.4Z"/>
+            <path d="M25.33,62.68c-1.15-.05-2.3-.15-3.45-.14-6.6.06-13.19.07-19.78.26-2.26.06-1.89.16-1.96-1.99-.03-.82-.03-1.65-.08-2.47-.05-.97.11-1.46,1.36-1.42,4.6.13,9.2.09,13.8.14,3.56.03,7.12.14,10.68.14,6.29,0,12.58-.04,18.88-.06.45,0,.9,0,1.43.29-.25.2-.48.44-.75.6-4.79,2.76-9.59,5.5-14.38,8.26-5.53,3.19-11.07,6.37-16.58,9.6-2.39,1.4-4.75,2.85-7.09,4.33-.86.54-1.41.64-1.94-.43-.53-1.08-1.25-2.07-1.91-3.09-.43-.65-.34-1.02.4-1.41,5.48-2.93,10.95-5.9,16.41-8.87,1.37-.74,2.72-1.52,4.05-2.32.41-.24.74-.62,1.1-.93-.06-.16-.12-.31-.19-.47Z"/>
+            <path d="M81.33,63.04c1.91,1.13,3.46,2.14,5.09,3,2.53,1.32,5.12,2.51,7.66,3.8,3.2,1.62,6.37,3.28,9.56,4.92.73.37.93.74.38,1.51-.7.98-1.3,2.04-1.83,3.12-.46.94-1,1.01-1.84.51-2.98-1.76-5.98-3.5-8.98-5.23-6.26-3.6-12.53-7.19-18.8-10.77-3.57-2.04-7.15-4.06-10.72-6.1-.1-.06-.15-.2-.46-.61,1.17,0,2.12,0,3.06,0,7.08,0,14.17,0,21.25.02,5.56,0,11.11.03,16.67.02,1.3,0,2.6-.08,3.89-.18.77-.06,1.2.25,1.2,1-.01,1.39-.09,2.77-.15,4.16-.04.92-.31,1.29-1.44,1.25-7.72-.31-15.45-.49-23.18-.7-.32,0-.64.13-1.36.29Z"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container">
+        <!-- Back To Top Floating Circle Badge -->
+        <div class="diznr-back-top-wrapper">
+          <button id="back-to-top-btn" class="back-to-top-circle magnetic" aria-label="Back to Top">
+            <i class="fa-solid fa-asterisk"></i>
+          </button>
+          <span class="back-to-top-text">Back to top</span>
+        </div>
+
+        <!-- Giant Headline Title (MAQ.CR) -->
+        <h2 class="diznr-giant-title">
+          MA<span class="accent-slash">Q</span>.CR
+        </h2>
+
+        <!-- Structured Footer Grid -->
+        <div class="diznr-footer-grid">
+          
+          <!-- Brand Info Column -->
+          <div class="diznr-brand-block">
+            <a href="#hero" class="diznr-brand-logo">maq.cr</a>
+            <div class="diznr-brand-sub">made by mohammed velom</div>
+            <p class="diznr-brand-desc">
+              Visual Storyteller, Creative Designer, Video Editor & BCA Student crafting luxury editorial brand systems in Kerala, India.
+            </p>
+
+            <div class="diznr-social-row">
+              <a href="https://wa.me/919747008103?text=Hello!%20Mohammed%20Velom%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="diznr-social-icon magnetic" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://instagram.com/maq.cr" target="_blank" rel="noopener" class="diznr-social-icon magnetic" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.behance.net/maqcr" target="_blank" rel="noopener" class="diznr-social-icon magnetic" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+              <a href="https://x.com/maqvelom" target="_blank" rel="noopener" class="diznr-social-icon magnetic" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/mohammedvelom1/" target="_blank" rel="noopener" class="diznr-social-icon magnetic" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.fiverr.com/s/dDmw8A6" target="_blank" rel="noopener" class="diznr-social-icon magnetic" aria-label="Fiverr"><i class="fa-solid fa-bolt"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links Columns -->
+          <div class="diznr-links-grid">
+            <div class="diznr-links-col">
+              <h4>NAVIGATION</h4>
+              <ul class="diznr-links-list">
+                <li><a href="#hero" class="diznr-link">Home</a></li>
+                <li><a href="#about" class="diznr-link">About Me</a></li>
+                <li><a href="#landscape-gallery" class="diznr-link">Campaign Showcase</a></li>
+                <li><a href="#media-categories" class="diznr-link">Posters & Thumbnails</a></li>
+                <li><a href="#portfolio" class="diznr-link">Selected Work</a></li>
+              </ul>
+            </div>
+
+            <div class="diznr-links-col">
+              <h4>EXPLORE</h4>
+              <ul class="diznr-links-list">
+                <li><a href="#process" class="diznr-link">Process Workflow</a></li>
+                <li><a href="#tools" class="diznr-link">Tools & Tech</a></li>
+                <li><a href="#services" class="diznr-link">Services</a></li>
+                <li><a href="#experience" class="diznr-link">Experience</a></li>
+                <li><a href="#contact" class="diznr-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="diznr-footer-bottom">
+          <div>© 2026 @MAQ.CR. All rights reserved.</div>
+          <div>Crafted with passion • Kerala, India</div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- STICKY FLOATING GLASS PILL NAVBAR (At Very Bottom Center) -->
+    <div class="floating-bottom-pill-nav hidden">
+      <a href="#hero" class="pill-brand">maq.cr</a>
+      
+      <ul class="pill-nav-links">
+        <li><a href="#about" class="pill-nav-link">About</a></li>
+        <li><a href="#landscape-gallery" class="pill-nav-link">Campaigns</a></li>
+        <li><a href="#portfolio" class="pill-nav-link">Selected Work</a></li>
+        <li><a href="#process" class="pill-nav-link">Process</a></li>
+        <li><a href="#tools" class="pill-nav-link">Tools</a></li>
+      </ul>
+
+      <div class="pill-slot-badge">
+        <span class="pill-slot-dot"></span>
+        Available for Freelance
+      </div>
+
+  </main>
+
+  <!-- DOCKED BOTTOM-RIGHT MAQ AI LIVE ASSISTANT WIDGET -->
+  <div id="maq-ai-chat-widget" class="maq-ai-widget">
+    
+    <!-- Floating Trigger Button (Bottom Right - Fixed Viewport) -->
+    <button class="maq-ai-trigger-btn" aria-label="Toggle MAQ AI Assistant">
+      <i class="fa-solid fa-robot"></i>
+      <span>MAQ AI</span>
+      <span class="maq-ai-online-dot"></span>
+    </button>
+
+    <!-- Reactive Chat Drawer Box (Docked Right Side) -->
+    <div class="maq-ai-chat-window">
+      
+      <!-- Chat Header -->
+      <div class="maq-ai-chat-header">
+        <div style="display: flex; align-items: center; gap: 0.7rem;">
+          <div class="maq-ai-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div>
+            <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-primary);">MAQ AI</div>
+            <div style="font-size: 0.72rem; color: var(--accent-cyan); font-family: var(--font-mono);">● Online</div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 0.4rem;">
+          <button class="maq-ai-expand-btn" aria-label="Toggle Window Size"><i class="fa-solid fa-expand"></i></button>
+          <button class="maq-ai-close-btn" aria-label="Close MAQ AI"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div class="maq-ai-chips-row">
+        <button class="maq-ai-chip" data-query="1920 / 1080">🧮 1920 / 1080</button>
+        <button class="maq-ai-chip" data-query="300 * 8">🖨️ 300 * 8 (DPI)</button>
+        <button class="maq-ai-chip" data-query="Which camera gear do you shoot with?">📸 Camera Gear</button>
+        <button class="maq-ai-chip" data-query="What software do you edit with?">💻 Software</button>
+        <button class="maq-ai-chip" data-query="Show me your best brand project!">🎨 Best Project</button>
+        <button class="maq-ai-chip" data-query="How can I hire you for freelance work?">💼 Hire Me</button>
+      </div>
+
+      <!-- Chat Log Stream -->
+      <div id="maq-ai-log" class="maq-ai-log">
+        <div class="maq-ai-msg bot">
+          <div class="msg-content">
+            👋 Hi! I'm <strong>MAQ AI</strong>, an advanced creative assistant <strong>created by Mohammed Velom</strong> ✨. Ask me any design question, aspect ratio calculation, or details about Mohammed's visual work! 🚀
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Footer Bar -->
+      <form id="maq-ai-form" class="maq-ai-form">
+        <input type="text" id="maq-ai-input" autocomplete="off" placeholder="Ask MAQ AI anything..." required>
+        <button type="submit" class="maq-ai-send-btn" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- 4. INTERACTIVE RESUME VIEWER MODAL -->
+  <div id="resume-modal" class="ask-mohammed-modal">
+    <div class="ask-mohammed-card" style="max-width: 720px; max-height: 90vh; overflow-y: auto;">
+      <button class="viewfinder-close-btn resume-close-btn" aria-label="Close Resume"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="tag-badge" style="margin-bottom: 1rem;">
+        <span class="tag-badge-dot"></span>
+        CURRICULUM VITAE
+      </div>
+
+      <div style="display: flex; gap: 1.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 1.2rem; margin-bottom: 1.5rem; align-items: center; flex-wrap: wrap;">
+        <div style="width: 75px; height: 75px; border-radius: 50%; overflow: hidden; border: 2px solid var(--accent); flex-shrink: 0;">
+          <img src="assets/mohammed-velom-portrait.jpg" alt="Mohammed Velom Portrait" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+        <div style="flex: 1;">
+          <h2 style="font-size: 1.8rem; font-family: var(--font-heading); margin-bottom: 0.2rem;">MOHAMMED VELOM</h2>
+          <div style="color: var(--accent); font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700;">Graphic Designer • Photographer • Videographer • BCA Student</div>
+          <div style="color: var(--text-muted); font-size: 0.82rem; margin-top: 0.3rem;"><i class="fa-solid fa-location-dot"></i> Velom, Kozhikode, Kerala • <i class="fa-solid fa-envelope"></i> mohammedvelom.in@gmail.com • <i class="fa-solid fa-phone"></i> +91 9747008103</div>
+        </div>
+
+        <a href="resume.html" target="_blank" class="btn btn-gradient magnetic" style="padding: 0.6rem 1.4rem; font-size: 0.82rem;">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Open Full PDF CV</span>
+        </a>
+      </div>
+
+      <!-- Executive Summary -->
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-mono); color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.5rem; letter-spacing: 0.05em;">PROFESSIONAL SUMMARY</h4>
+        <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.75;">
+          Creative and detail-oriented Graphic Designer, Photographer, and Videographer with 2+ years of experience producing compelling visual content across digital and print media. Skilled in creating brand identities, social media creatives, promotional campaigns, photography, and cinematic video production. Currently pursuing Bachelor of Computer Applications (BCA).
+        </p>
+      </div>
+
+      <!-- Education & Milestones -->
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-mono); color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.5rem; letter-spacing: 0.05em;">EDUCATION & ACADEMICS</h4>
+        <div style="background: var(--bg-glass); padding: 1rem 1.2rem; border-radius: 12px; border: 1px solid var(--border-light);">
+          <div style="font-weight: 700; font-size: 0.95rem;">Bachelor of Computer Applications (BCA)</div>
+          <div style="font-size: 0.85rem; color: var(--accent);">Badriya College • 2024 – Present</div>
+          <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.3rem;">Focusing on software development, web engineering, UI/UX design algorithms, and digital media.</div>
+        </div>
+      </div>
+
+      <!-- Core Technical Competencies -->
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-mono); color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.5rem; letter-spacing: 0.05em;">CORE COMPETENCIES & SOFTWARE</h4>
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">Adobe Photoshop</span>
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">Adobe Illustrator</span>
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">Premiere Pro</span>
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">After Effects</span>
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">DaVinci Resolve</span>
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">Sony α7 IV Photography</span>
+          <span style="padding: 0.35rem 0.8rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">HTML5 / CSS3 / JS / GSAP</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CDN Dependencies: GSAP, ScrollTrigger, Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
