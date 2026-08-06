@@ -1228,10 +1228,10 @@
   gap: 1.5rem;
 }
 
-/* STICKY FLOATING GLASS PILL NAVBAR (At Very Bottom Center) */
+/* STICKY FLOATING GLASS PILL NAVBAR (Floating At Top Center) */
 .floating-bottom-pill-nav {
   position: fixed;
-  bottom: 1.8rem;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 8000;
@@ -1251,7 +1251,7 @@
 .floating-bottom-pill-nav.hidden {
   opacity: 0;
   visibility: hidden;
-  transform: translate(-50%, 30px);
+  transform: translate(-50%, -30px);
 }
 
 .pill-brand {
