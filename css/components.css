@@ -1228,29 +1228,30 @@
   gap: 1.5rem;
 }
 
-/* STICKY FLOATING GLASS PILL NAVBAR (Floating At Top Center) */
+/* STICKY FLOATING GLASS PILL NAVBAR (Perfectly Centered At Top) */
 .floating-bottom-pill-nav {
   position: fixed;
-  top: 1.5rem;
+  top: 1.05rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 8000;
+  z-index: calc(var(--z-header) + 1);
   background: var(--bg-glass);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-pill);
-  padding: 0.55rem 0.8rem 0.55rem 1.6rem;
+  padding: 0.4rem 0.8rem 0.4rem 1.4rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px var(--accent-soft);
+  gap: 1.8rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35), 0 0 25px var(--accent-soft);
   transition: opacity 0.4s ease, transform 0.4s var(--ease-out-expo), visibility 0.4s ease;
 }
 
 .floating-bottom-pill-nav.hidden {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transform: translate(-50%, -30px);
 }
 
